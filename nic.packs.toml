@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ["...", "chromium", "chromium-driver", "chromedriver", "chromium-headless", "xorg.xorgserver", "libx11", "libxcomposite", "libxdamage", "libxext", "libxfixes", "libxrandr", "mesa", "dbus", "glib", "nss", "nspr", "atk", "at-spi2-core", "cups", "libdrm", "libxcb", "libxkbcommon", "libxshmfence", "alsa-lib", "pango", "cairo", "gdk-pixbuf", "gtk3"]
+
+[phases.install]
+cmds = [
+    "apt-get update",
+    "apt-get install -y wget gnupg unzip xvfb",
+    "wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -",
+    "echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' >> /etc/apt/sources.list.d/google.list",
+    "apt-get update",
+    "apt-get install -y google-chrome-stable fonts-liberation libappindicator3-1 xdg-utils",
+    "rm -rf /var/lib/apt/lists/*"
+]
+
+[start]
+cmd = "python main.py"
