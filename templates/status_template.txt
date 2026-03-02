@@ -1,0 +1,7 @@
+{emoji} *{title}* {emoji}
+
+{content}
+
+🔗 {link}
+
+#{hashtags}

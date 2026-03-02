@@ -1,0 +1,55 @@
+{
+  "government_jobs": [
+    {
+      "name": "Employment News",
+      "url": "https://employmentnews.gov.in/",
+      "type": "general"
+    },
+    {
+      "name": "Sarkari Result",
+      "url": "https://www.sarkariresult.com/",
+      "type": "aggregator"
+    },
+    {
+      "name": "FreeJobAlert",
+      "url": "https://www.freejobalert.com/",
+      "type": "aggregator"
+    }
+  ],
+  "private_jobs": [
+    {
+      "name": "Indeed",
+      "url": "https://www.indeed.co.in/jobs?q=&l=India&sort=date",
+      "type": "job_portal"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?geoId=102713980&sortBy=DD",
+      "type": "professional"
+    }
+  ],
+  "schemes": [
+    {
+      "name": "MyScheme",
+      "url": "https://www.myscheme.gov.in/search/all-schemes",
+      "type": "central"
+    },
+    {
+      "name": "PM India",
+      "url": "https://www.pmindia.gov.in/en/schemes/",
+      "type": "central"
+    }
+  ],
+  "notifications": [
+    {
+      "name": "UPSC",
+      "url": "https://upsc.gov.in/examinations/calendar",
+      "type": "exam_calendar"
+    },
+    {
+      "name": "SSC",
+      "url": "https://ssc.nic.in/SSC_Notifications",
+      "type": "recruitment"
+    }
+  ]
+}
